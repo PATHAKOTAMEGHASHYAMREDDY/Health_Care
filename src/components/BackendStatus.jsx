@@ -39,7 +39,7 @@ const BackendStatus = () => {
       animate={{ opacity: 1, y: 0 }}
       className="fixed top-0 left-0 right-0 z-50 bg-red-600 text-white p-4"
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      {/* <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-3">
           {status === 'checking' ? (
             <RefreshCw className="w-5 h-5 animate-spin" />
@@ -61,8 +61,9 @@ const BackendStatus = () => {
           <RefreshCw className="w-4 h-4" />
           <span>Retry</span>
         </button>
-      </div>
+      </div> */}
       
+      {/* Troubleshooting steps hidden from frontend
       {status === 'disconnected' && (
         <div className="mt-3 text-sm text-red-100">
           <p><strong>To fix this:</strong></p>
@@ -74,6 +75,7 @@ const BackendStatus = () => {
           </ol>
         </div>
       )}
+      */}
     </motion.div>
   );
 };
